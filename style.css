@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 512px;
+}
+
+div input {
+    font-size: 32px;
+    padding: 4px 8px;
+}
+
+div input.error {
+    background-color: orange;
+}
