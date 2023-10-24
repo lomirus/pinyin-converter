@@ -18,7 +18,9 @@ jobs:
         run: wasm-pack build --target web
 
       - name: Merge Assets
-        run: mv pkg/* public
+        run: |
+          mv pkg/pinyin_converter_bg.wasm public
+          mv pkg/pinyin_converter.js public
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
