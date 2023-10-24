@@ -3,8 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - master  # Set a branch to deploy
-  pull_request:
+      - main  # Set a branch to deploy
 
 jobs:
   deploy:
@@ -17,7 +16,8 @@ jobs:
       - name: Build WASM
         run: wasm-pack build --target web
 
-      - run: mv pkg/* public
+      - name: Merge Assets
+        run: mv pkg/* public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
