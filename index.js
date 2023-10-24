@@ -1,5 +1,5 @@
 // import init, { convert_pinyin_ascii } from "../pkg/pinyin_converter.js";
-import init, { convert_pinyin_ascii } from "./pkg/pinyin_converter.js";
+import init, { convert_pinyin_ascii } from "./pinyin_converter.js";
 
 const inputBox = document.querySelector("#input");
 const outputBox = document.querySelector("#output");
